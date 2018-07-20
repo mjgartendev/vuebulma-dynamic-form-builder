@@ -1,0 +1,22 @@
+<template>
+  <div class="field">
+    <div class="control">
+      <label class="label">{{ label }}</label>
+      <input class="input" type="text" :name="name" :placeholder="placeholder" />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "RangeInput",
+  props: [
+    "label",
+    "name",
+    "placeholder",
+    "starting-value-field",
+    "ending-value-field",
+    "control-type"
+  ]
+};
+</script>
